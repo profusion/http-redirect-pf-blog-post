@@ -51,7 +51,7 @@ func LoadPlugins() {
 	}
 }
 
-// Let's throw this here so it loads the plugins before accessing the file
+// Let's throw this here so it loads the plugins as soon as we import this module
 func init() {
 	LoadConfig()
 	LoadPlugins()
